@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional Portfolio of a Software Developer">
+  <title>Portfolio - DANIEL NJUI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Additional Tailwind Configuration */
+    @layer utilities {
+      .hover-card:hover {
+        box-shadow: 0 10px 25px rgba(0, 0, 255, 0.3);
+        transform: translateY(-5px);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-blue-50 font-sans leading-normal tracking-normal">
+  <!-- Navbar -->
+  <nav class="bg-blue-800 text-white p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-xl font-bold">DANIEL NJUI</h1>
+      <ul class="flex space-x-4">
+        <li><a href="#about" class="hover:text-gray-400">About</a></li>
+        <li><a href="#skills" class="hover:text-gray-400">Skills</a></li>
+        <li><a href="#projects" class="hover:text-gray-400">Projects</a></li>
+        <li><a href="#contact" class="hover:text-gray-400">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section with Photo -->
+  <header class="bg-cover bg-center h-64 text-white" style="background-image: url('https://source.unsplash.com/1600x900/?coding');">
+    <div class="h-full bg-blue-900 bg-opacity-50 flex items-center justify-center">
+      <div class="text-center flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-8">
+        <!-- Photo Section -->
+        <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-white">
+          <img src="daniel.jpg" alt="[Your Name's Photo]" class="w-full h-full object-cover">
+        </div>
+
+        <!-- Intro Section -->
+        <div>
+          <h2 class="text-4xl font-bold mb-2">Hi, I'm DANIEL</h2>
+          <p class="text-xl">Full Stack Software Developer</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 bg-white">
+    <div class="container mx-auto px-6 text-center">
+      <h3 class="text-3xl font-bold mb-6 text-blue-800">About Me</h3>
+      <p class="text-lg text-gray-600">
+        I am a highly skilled Full Stack Software Developer with a passion for creating innovative and scalable solutions across web and mobile platforms. With extensive expertise in front-end technologies such as <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, and frameworks like <strong>React</strong> and <strong>Vue.js</strong>, I build modern, dynamic, and responsive user interfaces. On the back-end, I leverage <strong>PHP</strong> and frameworks such as <strong>Laravel</strong> to create robust, secure, and high-performance applications. Additionally, I have strong experience in <strong>Dart</strong> for mobile development and <strong>Database Management</strong> to ensure efficient data handling.
+      </p>
+      <p class="text-lg text-gray-600 mt-4">
+        My background also includes managing server infrastructure, ensuring optimal performance, security, and reliability. I approach each project with a problem-solving mindset, whether developing full-stack applications or collaborating on larger projects. I stay updated with industry trends to bring innovative, efficient practices into every solution I create.
+      </p>
+      <p class="text-lg text-gray-600 mt-4">
+        Whether it’s developing scalable web applications, responsive mobile apps, or optimizing backend systems, my goal is to deliver seamless, user-centric experiences that drive both client satisfaction and business results.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-16 bg-blue-100">
+    <div class="container mx-auto px-6">
+      <h3 class="text-3xl font-bold text-center mb-6 text-blue-800">Skills</h3>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+        <!-- Skill Card 1 -->
+        <div class="bg-white p-6 shadow-lg rounded-lg text-center hover-card">
+          <h4 class="text-xl font-semibold mb-2 text-blue-600">HTML</h4>
+          <p class="text-gray-600">Experienced in building structured and semantic web pages.</p>
+        </div>
+        <!-- Skill Card 2 -->
+        <div class="bg-white p-6 shadow-lg rounded-lg text-center hover-card">
+          <h4 class="text-xl font-semibold mb-2 text-blue-600">CSS & Tailwind</h4>
+          <p class="text-gray-600">Styling responsive, modern layouts with Tailwind and vanilla CSS.</p>
+        </div>
+        <!-- Skill Card 3 -->
+        <div class="bg-white p-6 shadow-lg rounded-lg text-center hover-card">
+          <h4 class="text-xl font-semibold mb-2 text-blue-600">JavaScript</h4>
+          <p class="text-gray-600">Building dynamic user interfaces and adding interactivity to web apps.</p>
+        </div>
+        <!-- Skill Card 4 -->
+        <div class="bg-white p-6 shadow-lg rounded-lg text-center hover-card">
+          <h4 class="text-xl font-semibold mb-2 text-blue-600">PHP</h4>
+          <p class="text-gray-600">Experienced in server-side scripting and web development with PHP.</p>
+        </div>
+        <!-- Skill Card 5 -->
+        <div class="bg-white p-6 shadow-lg rounded-lg text-center hover-card">
+          <h4 class="text-xl font-semibold mb-2 text-blue-600">Database Management</h4>
+          <p class="text-gray-600">Skilled in database design and management (MySQL, PostgreSQL).</p>
+        </div>
+        <!-- Skill Card 6 -->
+        <div class="bg-white p-6 shadow-lg rounded-lg text-center hover-card">
+          <h4 class="text-xl font-semibold mb-2 text-blue-600">Dart & Flutter</h4>
+          <p class="text-gray-600">Developing mobile applications using Dart and Flutter.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+      <h3 class="text-3xl font-bold text-center mb-6 text-blue-800">Projects</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Project Card 1 -->
+        <div class="bg-gray-100 p-6 shadow-lg rounded-lg hover-card">
+          <img src="project 1.PNG" alt="Project 1" class="mb-4 rounded">
+          <h4 class="text-xl font-semibold mb-2 text-blue-600">Project 1</h4>
+          <p class="text-gray-600">LINDA MAMA is a user-friendly mobile app designed to support women throughout their pregnancy journey and early motherhood. The app offers a comprehensive range of features to ensure a healthy and informed experience</p>
+          <a href="https://github.com/Njui-Daniel/Linda-mama" class="text-blue-600 hover:text-blue-800 mt-2 block font-semibold">Read More</a>
+        </div>
+        <!-- Project Card 2 -->
+        <div class="bg-gray-100 p-6 shadow-lg rounded-lg hover-card">
+          <img src="project 2.PNG" alt="Project 2" class="mb-4 rounded">
+          <h4 class="text-xl font-semibold mb-2 text-blue-600">Project 2</h4>
+          <p class="text-gray-600">POCCURE is an advanced online pharmaceutical system designed to streamline the buying and selling of medications. It provides a comprehensive platform for pharmacies, healthcare providers, and patients to engage in secure and efficient transactions.</p>
+          <a href="https://github.com/Njui-Daniel/POCCARE" class="text-blue-600 hover:text-blue-800 mt-2 block font-semibold">Read More</a>
+        </div>
+        <!-- Project Card 3 -->
+        <div class="bg-gray-100 p-6 shadow-lg rounded-lg hover-card">
+          <img src="project 3.PNG" alt="Project 3" class="mb-4 rounded">
+          <h4 class="text-xl font-semibold mb-2 text-blue-600">Project 3</h4>
+          <p class="text-gray-600">Personal porfolio that showcase of my skills and projects as a software developer. This website highlights my expertise in full-stack development, featuring my proficiency in front-end frameworks like React and Vue.js, back-end technologies such as Laravel and PHP, and server management. Explore my projects, view my technical skills, and learn more about my professional journey. Whether you're looking for a collaborative partner or just want to see my work, this portfolio offers a comprehensive look at my capabilities and achievements. Feel free to connect with me through the contact section!.</p>
+          <a href="https://github.com/Njui-Daniel/Portfolio" class="text-blue-600 hover:text-blue-800 mt-2 block font-semibold">Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 bg-blue-100">
+    <div class="container mx-auto px-6">
+      <h3 class="text-3xl font-bold text-center mb-6 text-blue-800">Contact Me</h3>
+      <div class="max-w-md mx-auto bg-white p-8 rounded-lg shadow-lg">
+        <form action="#" method="POST">
+          <div class="mb-4">
+            <label for="name" class="block text-sm font-bold mb-2">Name</label>
+            <input type="text" id="name" class="w-full p-3 border border-gray-300 rounded-lg" placeholder="Your Name" required>
+          </div>
+          <div class="mb-4">
+            <label for="email" class="block text-sm font-bold mb-2">Email</label>
+            <input type="email" id="email" class="w-full p-3 border border-gray-300 rounded-lg" placeholder="Your Email" required>
+          </div>
+          <div class="mb-4">
+            <label for="message" class="block text-sm font-bold mb-2">Message</label>
+            <textarea id="message" class="w-full p-3 border border-gray-300 rounded-lg" rows="4" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="w-full bg-blue-600 text-white font-bold py-2 rounded-lg hover:bg-blue-700">Send Message</button>
+        </form>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="mt-12 text-center">
+        <h4 class="text-2xl font-bold mb-4">Connect with Me</h4>
+        <div class="flex justify-center space-x-6">
+          <a href="https://github.com/Njui-Daniel" target="_blank" class="text-blue-600 hover:text-blue-800">
+            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 .3C5.37.3 0 5.67 0 12.3c0 5.3 3.44 9.8 8.2 11.4.6.1.8-.3.8-.6v-2.2c-3.2.7-3.9-1.5-3.9-1"></path>
+            </svg>
+          </a>
+          <a href="https://linkedin.com/in/daniel-njui" target="_blank" class="text-blue-600 hover:text-blue-800">
+            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.23 0H1.77C.8 0 0 .77 0 1.75v20.5C0 23.23.8 24 1.77 24h20.46c.97 0 1.77-.77 1.77-1.75V1.75C24 .77 23.2 0 22.23 0z"></path>
+            </svg>
+          </a>
+            <a href="mailto:njuidaniel26@gmail.com" class="text-blue-600 hover:text-blue-800">
+            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 12.713l-11.76-7.3v14.028h23.52V5.413l-11.76 7.3z"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-800 text-white py-4">
+    <div class="container mx-auto text-center">
+      <p class="text-sm">&copy; 2024 Daniel Njui. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+
+</html>
